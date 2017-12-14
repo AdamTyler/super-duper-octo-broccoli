@@ -1,0 +1,50 @@
+body {
+  background-color: #2e2e2e;
+  color: white;
+  margin: 0;
+}
+
+.home-menu {
+  opacity: 1;
+  position: absolute;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.playing .home-menu {
+  opacity: 0;
+  transform: translateY(-800px);
+}
+
+.game-board {
+  opacity: 0;
+  transition: all 0.5s;  
+  transform: translateY(-800px);
+  margin: 10px;
+}
+
+.playing .game-board {
+  opacity: 1;
+  transform: unset;
+}
+
+.title {
+  text-align: center;
+  margin: 50px;
+}
+
+.game-grid {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.game-tile {
+  border: 2px solid #0093ff;
+  border-radius: 3px;
+  width: 32%;
+}
+
+.game-tile__image {
+  min-height: 160px;
+}
